@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <!-- Styling CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>Yuanyuan's website</title>
+
+</head>
+<body>
+    <div class="nav-container">
+        <header>
+            <a href="index.html" class="logo">Cao Yuanyuan</a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="/Cao Yuanyuan Resume.pdf">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <section class="projects animate__animated animate__fadeIn">
+        <h1>Projects I've done</h1>
+        <p class="subtitle">
+            These are some projects I've done. They're mainly done in groups of 5-6 members, and mostly school projects.
+            My own personal projects would be this website currently, but there'll be more to come! Click on the projects to find out more!
+        </p>
+        <!-- inserts carousell here of projects maybe? gotta figure this out myself -->
+        <div class="projectlist">
+            <div class="popup" id="popup-1" >
+                <img src="imgs/Mentoree.svg" class="websites animate__animated animate__fadeInDown" onclick="togglePopup()"/>
+                <div class="overlay"></div>
+                <div class="content" style="background-image: url('/imgs/mentoreebigger.svg');">
+                    <div class="close-btn" onclick="togglePopup()">×</div>
+                    <div class="slider">
+                        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+                        <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+                        <!-- <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+                        <input type="radio" name="slider" title="slide4" class="slider__nav"/> -->
+                        <div class="slider__inner">
+                            <div class="slider__contents"><i class="slider__image fa fa-codepen"></i>
+                                <h2 class="slider__caption">Project Description</h2>
+                                <p class="slider__txt">
+                                    This was my first ever web design project. We were tasked to come up with a website as a solution to an issue in the world today. 
+                                    <br><br>
+                                    As university students who are living comfortably, we realised our privileges - having access to information whenever we need it 
+                                    e.g. through the internet, with the help of seniors, etc. 
+                                    <br><br>
+                                    Thus, we decided to come up with this mentor-mentee matching programme where current university students can sign up as a mentor 
+                                    to a less-privileged student who is considering to attend the same university. 
+                                </p>
+                            </div>
+                            <div class="slider__contents"><i class="slider__image fa fa-newspaper-o"></i>
+                                <h2 class="slider__caption">Walkthrough</h2>
+                                <p class="slider__txt">
+                                    This is a video walkthrough, which might be slightly incomplete due to missing functionalities but I hope you'll get the gist of it!
+                                    <br><br>
+                                    <iframe width="480" height="280" src="https://www.youtube.com/embed/-3zEQRnCDsE" title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </p>
+                            </div>
+                            <div class="slider__contents"><i class="slider__image fa fa-television"></i>
+                                <h2 class="slider__caption">television</h2>
+                                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                            </div>
+                            <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
+                                <h2 class="slider__caption">diamond</h2>
+                                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-2" >
+                <img src="imgs/Hello World.svg" class="websites animate__animated animate__fadeInDown" onclick="togglePopup2()"/>
+                <div class="overlay"></div>
+                <div class="content" style="background-image: url('/imgs/helloworldbigger.svg');">
+                    <div class="close-btn" onclick="togglePopup2()">×</div>
+                    <div class="slider">
+                        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+                        <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+                        <!-- <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+                        <input type="radio" name="slider" title="slide4" class="slider__nav"/> -->
+                        <div class="slider__inner">
+                            <div class="slider__contents"><i class="slider__image fa fa-codepen"></i>
+                                <h2 class="slider__caption">Project Description</h2>
+                                <p class="slider__txt">
+                                    For this project, we were tasked to design a solution to a real life problem currently. 
+                                    We decided to propose a fun solution to the stricter travelling rules due to COVID-19.                                    
+                                    HelloWorld is a game that allows user to travel around the world at the comfort of their homes. 
+                                    <br><br>
+                                    Every month, a virtual treasure (cash prize) will be placed in a certain country.                                    
+                                    Every day, a player will receive a hint to the treasure's location.
+                                    They will have 3 chances each day to guess the location, and will 
+                                    also be able to explore the country virtually with Google Street Maps.                                 
+                                </p>
+                            </div>
+                            <div class="slider__contents"><i class="slider__image fa fa-newspaper-o"></i>
+                                <h2 class="slider__caption">Walkthrough</h2>
+                                <p class="slider__txt">
+                                    This is a video walkthrough, might be slightly incomplete due to missing functionalities but I hope you'll get the gist of it!
+                                    <br><br>
+                                    <iframe width="480" height="280" src="https://www.youtube.com/embed/cDEqp3BCKJg" title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </p>
+                            </div>
+                            <div class="slider__contents"><i class="slider__image fa fa-television"></i>
+                                <h2 class="slider__caption">television</h2>
+                                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                            </div>
+                            <div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
+                                <h2 class="slider__caption">diamond</h2>
+                                <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function togglePopup() {
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+        function togglePopup2() {
+            document.getElementById("popup-2").classList.toggle("active");
+        }
+        
+    </script>
+
+    <footer>
+        <div>
+            Copyright 2021
+        </div>
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
+            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+        <div>
+            Avatar made by Figma Community
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+</body>
+</html>
